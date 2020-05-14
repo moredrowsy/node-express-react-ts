@@ -1,0 +1,5 @@
+**/*.vscode
+**/client/build
+**/dist
+**/node_modules
+.env
