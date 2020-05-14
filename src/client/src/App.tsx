@@ -24,7 +24,7 @@ function App() {
               <Home title='React Typescript Template' />
             </Route>
             <Route path='/about' exact>
-              <About title='About 1' />
+              <About title='About' />
             </Route>
             <Route path='/project/:id' component={Project} />
             <Route>
