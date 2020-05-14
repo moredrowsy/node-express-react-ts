@@ -1,5 +1,5 @@
 {
-  "name": "node-express-react-typescript",
+  "name": "node-express-react-ts",
   "version": "1.0.0",
   "description": "Starter template with node, express, and react using typescript",
   "main": "dist/server.js",
@@ -26,7 +26,7 @@
     "boilerplate",
     "template"
   ],
-  "author": "moredrowsy",
+  "author": "Thuan Tang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/moredrowsy/node-express-react-ts/issues"
