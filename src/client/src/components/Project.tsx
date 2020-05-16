@@ -9,7 +9,7 @@ interface ProjectParams {
 }
 
 // Path regex matching example
-const Project = (props: ProjectProps) => {
+const Project: React.FC<ProjectProps> = (props) => {
   const params: ProjectParams = useParams();
 
   return (
