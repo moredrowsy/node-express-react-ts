@@ -1,13 +1,23 @@
 import React from 'react';
-import { RouteComponentProps } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+
+interface ProjectProps {
+  title: string;
+}
+interface ProjectParams {
+  id: string;
+}
 
 // Path regex matching example
-type ProjectParams = { id: string };
-const Project = (props: RouteComponentProps<ProjectParams>) => (
-  <React.Fragment>
-    <h3>Path Regex Matching Example</h3>
-    <p>Project Path ID: {props.match.params.id}</p>
-  </React.Fragment>
-);
+const Project = (props: ProjectProps) => {
+  const params: ProjectParams = useParams();
+
+  return (
+    <React.Fragment>
+      <h3>{props.title}</h3>
+      <p>Project Path ID: {params.id}</p>
+    </React.Fragment>
+  );
+};
 
 export default Project;

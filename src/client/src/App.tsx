@@ -26,7 +26,9 @@ function App() {
             <Route path='/about' exact>
               <About title='About' />
             </Route>
-            <Route path='/project/:id' component={Project} />
+            <Route path='/project/:id'>
+              <Project title={'Path Regex Matching Example'} />
+            </Route>
             <Route>
               <Error />
             </Route>
