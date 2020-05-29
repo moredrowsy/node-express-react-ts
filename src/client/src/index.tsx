@@ -5,6 +5,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
+  // StrictMode renders components TWICE (on development but not production)
+  // in order to detect/warn any problems with your code.
   <React.StrictMode>
     <App />
   </React.StrictMode>,
