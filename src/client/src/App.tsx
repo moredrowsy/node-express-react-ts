@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import Home from './components/pages/Home';
 import About from './components/pages/About';
@@ -18,22 +18,21 @@ function App() {
           <a href='/'>Home</a>, <a href='/about'>About</a>,{' '}
           <a href='/project/1'>Project 1</a>, <a href='/nomatches'>Error</a>
         </div>
-        <BrowserRouter>
-          <Switch>
-            <Route path='/' exact>
-              <Home title='React Typescript Template' />
-            </Route>
-            <Route path='/about' exact>
-              <About title='About' />
-            </Route>
-            <Route path='/project/:id'>
-              <Project title={'Path Regex Matching Example'} />
-            </Route>
-            <Route>
-              <Error />
-            </Route>
-          </Switch>
-        </BrowserRouter>
+
+        <Switch>
+          <Route path='/' exact>
+            <Home title='React Typescript Template' />
+          </Route>
+          <Route path='/about' exact>
+            <About title='About' />
+          </Route>
+          <Route path='/project/:id'>
+            <Project title={'Path Regex Matching Example'} />
+          </Route>
+          <Route>
+            <Error />
+          </Route>
+        </Switch>
       </header>
     </div>
   );
