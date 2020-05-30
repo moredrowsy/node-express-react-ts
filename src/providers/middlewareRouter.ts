@@ -1,9 +1,9 @@
-import bodyParser from 'body-parser';
 import express, { Router } from 'express';
 
 const router: Router = express.Router();
 
 // Register middlewares
-router.use(bodyParser.json()); // for POST params
+router.use(express.json());
+router.use(express.urlencoded({ extended: true }));
 
 export default router;
