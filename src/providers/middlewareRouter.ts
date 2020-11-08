@@ -1,5 +1,5 @@
 import express, { Router } from 'express';
-import corsMiddleware from '../middleware/corsMiddleware';
+import corsMiddleware from '../middlewares/corsMiddleware';
 
 const router: Router = express.Router();
 
